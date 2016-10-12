@@ -1,3 +1,1 @@
-# Behaviour Tree
-## HOW TO RUN
-...
+# BehaviourTree
