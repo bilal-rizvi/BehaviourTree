@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <BTLibrary>
+        <BTFile>LLM.xbt </BTFile>
+        <LibraryClassName>LLMBTLibrary</LibraryClassName>
+        <LibraryPackage>bts.btlibrary</LibraryPackage>
+        <LibraryOutputDirectory>src\bts\btlibrary</LibraryOutputDirectory>
+        <DomainFile>ll.xml</DomainFile>
+        <ModelActionsPackage>bts.action</ModelActionsPackage>
+        <ModelConditionsPackage>bts.condition</ModelConditionsPackage>
+    </BTLibrary>
+</Configuration>

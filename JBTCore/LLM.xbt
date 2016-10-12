@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tree>
+  <Node id="Node_0" name="LLM" type="Root">
+    <Children>
+      <Node id="Node_1" type="Selector">
+        <Children>
+          <Node id="Node_2" type="Sequence">
+            <Children>
+              <Node id="Node_3" name="IsAdult" type="Condition" />
+              <Node id="Node_4" name="WalkforShort" type="Action" />
+            </Children>
+          </Node>
+          <Node id="Node_5" type="Sequence">
+            <Children>
+              <Node id="Node_6" name="IsHealthy" type="Condition" />
+              <Node id="Node_7" name="WalkforLong" type="Action" />
+            </Children>
+          </Node>
+        </Children>
+      </Node>
+    </Children>
+  </Node>
+</Tree>
+

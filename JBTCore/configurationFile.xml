@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration> 
+<DomainFile>ll.xml</DomainFile>    
+<ModelActionsPackage>bts.action</ModelActionsPackage>
+<ModelConditionsPackage>bts.condition</ModelConditionsPackage>
+<ModelActionsOutputDirectory>src/bts/action</ModelActionsOutputDirectory>
+<ModelConditionsOutputDirectory>src/bts/condition</ModelConditionsOutputDirectory>
+<ExecutionActionsPackage>bts.action.execution</ExecutionActionsPackage>
+<ExecutionConditionsPackage>bts.condition.execution</ExecutionConditionsPackage>
+<ExecutionActionsOutputDirectory>src/bts/action/execution</ExecutionActionsOutputDirectory>
+<ExecutionConditionsOutputDirectory>src/bts/condition/execution</ExecutionConditionsOutputDirectory>
+</Configuration>

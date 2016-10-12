@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Domain package="mypackage">
+<ActionSet>
+<Action name="StandUp"> </Action>
+<Action name="WalkforShort"> </Action>
+<Action name="WalkforLong"> </Action>
+</ActionSet>
+<SensorSet>
+<Sensor name="IsAdult"  type="BOOLEAN"/>
+<Sensor name="IsHealthy" type="BOOLEAN"/>
+</SensorSet>
+<GoalSet></GoalSet>
+<EntitySet> </EntitySet>
+</Domain>
