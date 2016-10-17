@@ -4,23 +4,23 @@
 //                                                         
 // Generated on 10/16/2016 21:41:45
 // ******************************************************* 
-package bts.condition;
+package bts.action;
 
-/** ModelCondition class created from MMPM condition IsAdult. */
-public class IsAdult extends jbt.model.task.leaf.condition.ModelCondition {
+/** ModelAction class created from MMPM action RunForFiveMin. */
+public class RunForFiveMin extends jbt.model.task.leaf.action.ModelAction {
 
-	/** Constructor. Constructs an instance of IsAdult. */
-	public IsAdult(jbt.model.core.ModelTask guard) {
+	/** Constructor. Constructs an instance of RunForFiveMin. */
+	public RunForFiveMin(jbt.model.core.ModelTask guard) {
 		super(guard);
 	}
 
 	/**
-	 * Returns a bts.condition.execution.IsAdult task that is able to run this
-	 * task.
+	 * Returns a bts.action.execution.RunForFiveMin task that is able to run
+	 * this task.
 	 */
 	public jbt.execution.core.ExecutionTask createExecutor(
 			jbt.execution.core.BTExecutor executor,
 			jbt.execution.core.ExecutionTask parent) {
-		return new bts.condition.execution.IsAdult(this, executor, parent);
+		return new bts.action.execution.RunForFiveMin(this, executor, parent);
 	}
 }

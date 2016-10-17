@@ -4,7 +4,7 @@
 //                                                         
 //           ABSTRACT METHODS MUST BE IMPLEMENTED          
 //                                                         
-// Generated on 10/10/2016 14:06:30
+// Generated on 10/16/2016 21:41:45
 // ******************************************************* 
 package bts.condition.execution;
 
@@ -40,7 +40,12 @@ public class IsHealthy extends
 		 * should only return Status.SUCCESS, Status.FAILURE or Status.RUNNING.
 		 * No other values are allowed.
 		 */
-		return jbt.execution.core.ExecutionTask.Status.SUCCESS;
+		boolean a=(int)(Math.random()*100) < 30;
+		 if(!a )
+		{System.out.println("It is the wrong value for the BT");
+		return jbt.execution.core.ExecutionTask.Status.SUCCESS;}
+		 else{System.out.println("It is the right value for the BT");
+		 return jbt.execution.core.ExecutionTask.Status.FAILURE;}
 	}
 
 	protected void internalTerminate() {

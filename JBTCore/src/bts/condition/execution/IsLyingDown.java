@@ -6,17 +6,17 @@
 //                                                         
 // Generated on 10/16/2016 21:41:45
 // ******************************************************* 
-package bts.action.execution;
+package bts.condition.execution;
 
-/** ExecutionAction class created from MMPM action WalkforShort. */
-public class WalkforShort extends
-		jbt.execution.task.leaf.action.ExecutionAction {
+/** ExecutionCondition class created from MMPM condition IsLyingDown. */
+public class IsLyingDown extends
+		jbt.execution.task.leaf.condition.ExecutionCondition {
 
 	/**
-	 * Constructor. Constructs an instance of WalkforShort that is able to run a
-	 * bts.action.WalkforShort.
+	 * Constructor. Constructs an instance of IsLyingDown that is able to run a
+	 * bts.condition.IsLyingDown.
 	 */
-	public WalkforShort(bts.action.WalkforShort modelTask,
+	public IsLyingDown(bts.condition.IsLyingDown modelTask,
 			jbt.execution.core.BTExecutor executor,
 			jbt.execution.core.ExecutionTask parent) {
 		super(modelTask, executor, parent);
@@ -40,7 +40,13 @@ public class WalkforShort extends
 		 * should only return Status.SUCCESS, Status.FAILURE or Status.RUNNING.
 		 * No other values are allowed.
 		 */
-		return jbt.execution.core.ExecutionTask.Status.SUCCESS;
+		boolean a=(int)(Math.random()*100) < 90;
+		 if(!a )
+		{System.out.println("It is the wrong value for the BT");
+		return jbt.execution.core.ExecutionTask.Status.FAILURE;}
+		 else
+		 {System.out.println("It is the wrong value for the BT");
+		 return jbt.execution.core.ExecutionTask.Status.FAILURE;}
 	}
 
 	protected void internalTerminate() {

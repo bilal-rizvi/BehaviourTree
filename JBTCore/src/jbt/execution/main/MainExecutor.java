@@ -15,6 +15,8 @@ public class MainExecutor {
 
 	public static void main(String[] args) {
 		
+		for(int i=0; i<20; i++)
+		{
 		/* First of all, we create the BT Library */
 		IBTLibrary btLibrary = new LLMBTLibrary();
 		
@@ -35,11 +37,14 @@ public class MainExecutor {
 		
 		/* And finally we run the tree through the BT Executor */
 		int counter = 0;
+		
 		do{
 			counter++;
-			System.out.println("counter: " + counter++);
 			btExecutor.tick();
+			System.out.println("counter: " + counter);
 		}while(btExecutor.getStatus() == ExecutionTask.Status.RUNNING);
+		System.out.println("\n\n................"+i+ " No. cycle completed...........\n\n");
+		}
 	}
 
 }

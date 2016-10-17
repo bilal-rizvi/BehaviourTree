@@ -63,23 +63,6 @@
               </Node>
             </Children>
           </Node>
-          <Node id="Node_31" type="Sequence">
-            <Children>
-              <Node id="Node_32" name="IsStanding" type="Condition" />
-              <Node id="Node_33" type="Selector">
-                <Children>
-                  <Node id="Node_34" type="Sequence">
-                    <Children>
-                      <Node id="Node_35" name="IsAdult" type="Condition" />
-                      <Node id="Node_36" name="IsHypertensive" type="Condition" />
-                      <Node id="Node_37" name="WalkforShort" type="Action" />
-                    </Children>
-                  </Node>
-                  <Node id="Node_38" type="Success" />
-                </Children>
-              </Node>
-            </Children>
-          </Node>
         </Children>
       </Node>
     </Children>

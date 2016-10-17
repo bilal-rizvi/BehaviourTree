@@ -2,7 +2,7 @@
 //                   MACHINE GENERATED CODE                
 //                       DO NOT MODIFY                     
 //                                                         
-// Generated on 10/12/2016 18:57:44
+// Generated on 10/17/2016 11:49:23
 // ******************************************************* 
 package bts.btlibrary;
 
@@ -18,13 +18,52 @@ public class LLMBTLibrary implements jbt.execution.core.IBTLibrary {
 
 	/* Static initialization of all the trees. */
 	static {
-		LLM = new jbt.model.task.composite.ModelSelector(null,
+		LLM = new jbt.model.task.composite.ModelRandomSelector(
+				null,
+				new jbt.model.task.composite.ModelSequence(
+						null,
+						new bts.condition.IsSitting(null),
+						new jbt.model.task.composite.ModelSelector(
+								null,
+								new jbt.model.task.composite.ModelSequence(
+										null,
+										new bts.condition.IsAdult(null),
+										new jbt.model.task.decorator.ModelInverter(
+												null,
+												new bts.condition.IsHealthy(
+														null)),
+										new bts.action.WalkforShort(null)),
+								new jbt.model.task.leaf.ModelSuccess(null))),
+				new jbt.model.task.composite.ModelSequence(
+						null,
+						new bts.condition.IsLyingDown(null),
+						new jbt.model.task.composite.ModelSelector(
+								null,
+								new jbt.model.task.composite.ModelSequence(
+										null,
+										new bts.condition.IsAdult(null),
+										new jbt.model.task.decorator.ModelInverter(
+												null,
+												new bts.condition.IsHealthy(
+														null)),
+										new bts.action.WalkforLong(null)),
+								new jbt.model.task.leaf.ModelSuccess(null))),
 				new jbt.model.task.composite.ModelSequence(null,
-						new bts.condition.IsAdult(null),
-						new bts.action.WalkforShort(null)),
+						new bts.condition.IsEating(null),
+						new jbt.model.task.composite.ModelSelector(null,
+								new jbt.model.task.composite.ModelSequence(
+										null, new bts.condition.IsAdult(null),
+										new bts.condition.IsHypertensive(null),
+										new bts.action.RunForFiveMin(null)),
+								new jbt.model.task.leaf.ModelSuccess(null))),
 				new jbt.model.task.composite.ModelSequence(null,
-						new bts.condition.IsHealthy(null),
-						new bts.action.WalkforLong(null)));
+						new bts.condition.IsStanding(null),
+						new jbt.model.task.composite.ModelSelector(null,
+								new jbt.model.task.composite.ModelSequence(
+										null, new bts.condition.IsAdult(null),
+										new bts.condition.IsHypertensive(null),
+										new bts.action.WalkforShort(null)),
+								new jbt.model.task.leaf.ModelSuccess(null))));
 
 	}
 

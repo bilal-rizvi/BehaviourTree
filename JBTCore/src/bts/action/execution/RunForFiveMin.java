@@ -8,15 +8,15 @@
 // ******************************************************* 
 package bts.action.execution;
 
-/** ExecutionAction class created from MMPM action WalkforShort. */
-public class WalkforShort extends
+/** ExecutionAction class created from MMPM action RunForFiveMin. */
+public class RunForFiveMin extends
 		jbt.execution.task.leaf.action.ExecutionAction {
 
 	/**
-	 * Constructor. Constructs an instance of WalkforShort that is able to run a
-	 * bts.action.WalkforShort.
+	 * Constructor. Constructs an instance of RunForFiveMin that is able to run
+	 * a bts.action.RunForFiveMin.
 	 */
-	public WalkforShort(bts.action.WalkforShort modelTask,
+	public RunForFiveMin(bts.action.RunForFiveMin modelTask,
 			jbt.execution.core.BTExecutor executor,
 			jbt.execution.core.ExecutionTask parent) {
 		super(modelTask, executor, parent);

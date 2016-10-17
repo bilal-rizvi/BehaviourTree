@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Domain package="mypackage">
+<Domain package="lifelogMonitor">
 <ActionSet>
-<Action name="StandUp"> </Action>
-<Action name="WalkforShort"> </Action>
-<Action name="WalkforLong"> </Action>
+<Action name="StandUp"/>
+<Action name="WalkforShort"/>
+<Action name="WalkforLong"/>
+<Action name="RunForFiveMin"/>
 </ActionSet>
 <SensorSet>
+<Sensor name="IsSitting"  type="BOOLEAN"/>
+<Sensor name="IsLyingDown"  type="BOOLEAN"/>
+<Sensor name="IsStanding"  type="BOOLEAN"/>
+<Sensor name="IsEating"  type="BOOLEAN"/>
 <Sensor name="IsAdult"  type="BOOLEAN"/>
 <Sensor name="IsHealthy" type="BOOLEAN"/>
+<Sensor name="IsHypertensive"  type="BOOLEAN"/>
+<Sensor name="IsDiabetic"  type="BOOLEAN"/>
 </SensorSet>
 <GoalSet></GoalSet>
 <EntitySet> </EntitySet>
